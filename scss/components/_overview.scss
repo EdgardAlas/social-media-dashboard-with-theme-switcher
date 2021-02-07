@@ -1,0 +1,71 @@
+.overview {
+    max-width: 100%;
+    background-color: var(--card-bg);
+    padding: 2rem;
+    border-radius: $border-radius-card / 2;
+    box-sizing: border-box;
+    cursor: pointer;
+    @include transition(background);
+
+    &__header,
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 0;
+    }
+
+    &__footer {
+        align-items: baseline;
+    }
+
+    &__title {
+        color: var(--text-primary);
+        @include transition(color);
+        margin: 0;
+        font-size: 1rem;
+    }
+
+    &__statistic {
+        display: flex;
+        align-items: center;
+
+    }
+
+    &__subtitle {
+        font-weight: $text-bold;
+        color: var(--text-primary);
+        font-size: 2rem;
+        @include transition(color);
+    }
+
+    &__percent {
+        font-weight: $text-bold;
+        margin-left: .5rem;
+
+        &--up {
+            color: var(--lime);
+        }
+
+        &--down {
+            color: var(--bright-red);
+        }
+    }
+
+    &:nth-child(n) {
+        margin-bottom: 2rem;
+    }
+
+    @media only screen and (min-width: 480px) {
+        max-width: 25%;
+        min-width: 300px;
+
+        &:nth-child(n) {
+            margin-bottom: 2rem;
+        }
+
+    }
+
+    &:hover {
+        background-color: var(--card-hover);
+    }
+}

@@ -1,0 +1,114 @@
+.card {
+    $scope: &;
+    background-color: var(--card-bg);
+    border-radius: $border-radius-card / 2;
+    max-width: 100%;
+    @include transition(background);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+
+    &__border {
+        border-radius: $border-radius-card $border-radius-card 0 0;
+        height: 3px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+    }
+
+    &--facebook {
+        #{$scope}__border {
+            background: var(--facebook);
+        }
+    }
+
+    &--twitter {
+        #{$scope}__border {
+            background: var(--twitter);
+        }
+    }
+
+    &--instagram {
+        #{$scope}__border {
+            background: var(--instagram);
+        }
+
+    }
+
+    &--youtube {
+        #{$scope}__border {
+            background: var(--youtube);
+        }
+    }
+
+    &__header {
+        padding: 2rem;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__account {
+        text-decoration: none;
+        color: var(--text-secondary);
+        margin-left: .5rem;
+        font-weight: $text-bold;
+        @include transition(color);
+    }
+
+    &__body {
+        text-align: center;
+    }
+
+    &__statistic {
+        margin: 0;
+        font-size: 4rem;
+        color: var(--text-primary);
+        @include transition(color);
+    }
+
+    &__statistic-type {
+        color: var(--text-secondary);
+        font-size: 1.1rem;
+        letter-spacing: .2rem;
+        text-transform: uppercase;
+        @include transition(color);
+    }
+
+    &__footer {
+        padding: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__action {
+        font-weight: $text-bold;
+        margin-left: .5rem;
+
+        &--up {
+            color: var(--lime);
+        }
+
+        &--down {
+            color: var(--bright-red);
+        }
+    }
+
+    &:nth-child(n) {
+        margin-bottom: 2rem;
+    }
+
+
+
+    @media only screen and (min-width: 480px) {
+        max-width: 25%;
+        min-width: 300px;
+        // max-height: 330px;
+    }
+
+    &:hover {
+        background-color: var(--card-hover);
+    }
+}

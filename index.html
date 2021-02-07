@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <link rel="stylesheet" href="./dist/css/main.min.css">
+
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <section class="header__head">
+      <h1 class="header__title">
+        Social Media Dashboard
+      </h1>
+      <p class="header__subtitle">
+        Total Followers: 23,004
+      </p>
+    </section>
+    <section class="header__theme">
+      <p class="header__subtitle">Dark Mode</p>
+      <label for="dark-mode" class="header__theme-label"></label>
+      <input type="checkbox" name="dark-mode" id="dark-mode" class="header__theme-switch">
+    </section>
+  </header>
+
+  <section class="cards-section">
+    <article class="card card--facebook">
+      <div class="card__border"></div>
+      <section class="card__header">
+        <img src="./images/icon-facebook.svg" alt="facebook" class="card__img">
+        <a href="#" class="card__account">@nathanf</a>
+      </section>
+      <section class="card__body">
+        <h2 class="card__statistic">
+          1987
+        </h2>
+        <p class="card__statistic-type">
+          Followers
+        </p>
+      </section>
+      <section class="card__footer">
+        <img src="./images/icon-up.svg" alt="up" class="card__action">
+        <span class="card__action card__action--up">12 Today</span>
+      </section>
+    </article>
+
+    <article class="card card--twitter">
+      <div class="card__border"></div>
+      <section class="card__header">
+        <img src="./images/icon-twitter.svg" alt="facebook" class="card__img">
+        <a href="#" class="card__account">@nathanf</a>
+      </section>
+      <section class="card__body">
+        <h2 class="card__statistic">
+          1044
+        </h2>
+        <p class="card__statistic-type">
+          Followers
+        </p>
+      </section>
+      <section class="card__footer">
+        <img src="./images/icon-up.svg" alt="up" class="card__action">
+        <span class="card__action card__action--up">99 Today</span>
+      </section>
+    </article>
+
+    <article class="card card--instagram">
+      <div class="card__border"></div>
+      <section class="card__header">
+        <img src="./images/icon-instagram.svg" alt="facebook" class="card__img">
+        <a href="#" class="card__account">@realnathanf</a>
+      </section>
+      <section class="card__body">
+        <h2 class="card__statistic">
+          11k
+        </h2>
+        <p class="card__statistic-type">
+          Followers
+        </p>
+      </section>
+      <section class="card__footer">
+        <img src="./images/icon-up.svg" alt="up" class="card__action">
+        <span class="card__action card__action--up">1099 Today</span>
+      </section>
+    </article>
+
+    <article class="card card--youtube">
+      <div class="card__border"></div>
+      <section class="card__header">
+        <img src="./images/icon-youtube.svg" alt="facebook" class="card__img">
+        <a href="#" class="card__account">Nathan F.</a>
+      </section>
+      <section class="card__body">
+        <h2 class="card__statistic">
+          8239
+        </h2>
+        <p class="card__statistic-type">
+          Subscribers
+        </p>
+      </section>
+      <section class="card__footer">
+        <img src="./images/icon-down.svg" alt="up" class="card__action">
+        <span class="card__action card__action--down">144 Today</span>
+      </section>
+    </article>
+
+
+  </section>
+
+  <section class="overview-section">
+    <h2 class="overview-section__title">
+      Overview - Today
+    </h2>
+    <section class="overview-section__list">
+      <article class="overview">
+        <section class="overview__header">
+          <h3 class="overview__title">Page view</h3>
+          <img src="./images/icon-facebook.svg" alt="facebook">
+        </section>
+        <section class="overview__footer">
+          <p class="overview__subtitle">87</p>
+          <div class="overview__statistic">
+            <img src="./images/icon-up.svg" alt="up">
+            <span class="overview__percent overview__percent--up">3%</span>
+          </div>
+        </section>
+      </article>
+
+      <article class="overview">
+        <section class="overview__header">
+          <h3 class="overview__title">Likes</h3>
+          <img src="./images/icon-facebook.svg" alt="facebook">
+        </section>
+        <section class="overview__footer">
+          <p class="overview__subtitle">52</p>
+          <div class="overview__statistic">
+            <img src="./images/icon-up.svg" alt="up">
+            <span class="overview__percent overview__percent--up">2%</span>
+          </div>
+        </section>
+      </article>
+
+      <article class="overview">
+        <section class="overview__header">
+          <h3 class="overview__title">Likes</h3>
+          <img src="./images/icon-instagram.svg" alt="instagram">
+        </section>
+        <section class="overview__footer">
+          <p class="overview__subtitle">5462</p>
+          <div class="overview__statistic">
+            <img src="./images/icon-up.svg" alt="up">
+            <span class="overview__percent overview__percent--up">2257%</span>
+          </div>
+        </section>
+      </article>
+
+      <article class="overview">
+        <section class="overview__header">
+          <h3 class="overview__title">Profile Views</h3>
+          <img src="./images/icon-instagram.svg" alt="instagram">
+        </section>
+        <section class="overview__footer">
+          <p class="overview__subtitle">52k</p>
+          <div class="overview__statistic">
+            <img src="./images/icon-up.svg" alt="up">
+            <span class="overview__percent overview__percent--up"> 1375%</span>
+          </div>
+        </section>
+      </article>
+
+      <article class="overview">
+        <section class="overview__header">
+          <h3 class="overview__title">Retweets</h3>
+          <img src="./images/icon-twitter.svg" alt="twitter">
+        </section>
+        <section class="overview__footer">
+          <p class="overview__subtitle">117</p>
+          <div class="overview__statistic">
+            <img src="./images/icon-up.svg" alt="up">
+            <span class="overview__percent overview__percent--up"> 303%</span>
+          </div>
+        </section>
+      </article>
+
+      <article class="overview">
+        <section class="overview__header">
+          <h3 class="overview__title">Likes</h3>
+          <img src="./images/icon-twitter.svg" alt="twitter">
+        </section>
+        <section class="overview__footer">
+          <p class="overview__subtitle">507
+          </p>
+          <div class="overview__statistic">
+            <img src="./images/icon-up.svg" alt="up">
+            <span class="overview__percent overview__percent--up">553%</span>
+          </div>
+        </section>
+      </article>
+
+      <article class="overview">
+        <section class="overview__header">
+          <h3 class="overview__title">Likes</h3>
+          <img src="./images/icon-youtube.svg" alt="youtube">
+        </section>
+        <section class="overview__footer">
+          <p class="overview__subtitle">107
+          </p>
+          <div class="overview__statistic">
+            <img src="./images/icon-up.svg" alt="up">
+            <span class="overview__percent overview__percent--up">19%</span>
+          </div>
+        </section>
+      </article>
+
+      <article class="overview">
+        <section class="overview__header">
+          <h3 class="overview__title">Total Views</h3>
+          <img src="./images/icon-youtube.svg" alt="youtube">
+        </section>
+        <section class="overview__footer">
+          <p class="overview__subtitle">1407
+          </p>
+          <div class="overview__statistic">
+            <img src="./images/icon-up.svg" alt="up">
+            <span class="overview__percent overview__percent--up">12%</span>
+          </div>
+        </section>
+      </article>
+    </section>
+
+
+
+  </section>
+
+
+  <div class=" attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/EdgardAlas">Edgard Alas</a>.
+  </div>
+  <script src="./dist/js/js.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+.cards-section {
+    @extend %global-width;
+
+    @media only screen and (min-width: 480px) {
+        padding-left: 0;
+        padding-right: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}

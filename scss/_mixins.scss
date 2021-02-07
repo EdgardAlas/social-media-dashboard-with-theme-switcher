@@ -1,0 +1,7 @@
+%global-width {
+    padding: 1.5rem;
+}
+
+@mixin transition($property) {
+    transition: $property .2s ease;
+}

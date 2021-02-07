@@ -1,0 +1,23 @@
+.overview-section {
+    @extend %global-width;
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+        color: var(--text-primary);
+        padding: 0 2rem 2rem;
+        @include transition(color);
+    }
+
+    &__list {
+        padding-top: 0;
+
+        @media only screen and (min-width: 480px) {
+            padding-left: 0;
+            padding-right: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+    }
+}
