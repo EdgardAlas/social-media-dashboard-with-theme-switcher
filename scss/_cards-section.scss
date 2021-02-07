@@ -1,11 +1,9 @@
 .cards-section {
+    display: grid;
     @extend %global-width;
+    padding-left: 2rem;
 
     @media only screen and (min-width: 480px) {
-        padding-left: 0;
-        padding-right: 0;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
+        @include grid-container();
     }
 }
